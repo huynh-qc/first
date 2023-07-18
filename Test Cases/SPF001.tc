@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPF001</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ab97aee0-fc75-4032-b894-82fd6b866da3</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4a4b9c5c-328b-44c8-b3da-737d8f597974</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'huynh+3@firegroup.io'</defaultValue>
+      <description></description>
+      <id>4a4b9c5c-328b-44c8-b3da-737d8f597974</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>S3_TC Login SPF Store</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>15343fb8-600d-4735-becc-3b577f2878d2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b4f7f459-8085-4518-8eb1-c20ca8d7d2ce</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('StoreFrontAccount/input_email')</defaultValue>
+      <description></description>
+      <id>b4f7f459-8085-4518-8eb1-c20ca8d7d2ce</id>
+      <masked>false</masked>
+      <name>input_email</name>
+   </variable>
+</TestCaseEntity>
