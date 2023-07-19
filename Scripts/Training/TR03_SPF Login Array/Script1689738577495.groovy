@@ -16,13 +16,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.keyword.excel.ExcelKeywords
 
-//Method width Parameters
-addThreeNumbers(1,2,3)
 
-def addThreeNumbers(def firstValue, def secondValue, def thirdValue)
-    {
-        def total = firstValue + secondValue + thirdValue
-        println("The total value is : "+total)
-    }
+TestObject input_email = findTestObject('Object Repository/StoreFrontAccount/input_email')
+TestObject input_password = findTestObject('Object Repository/StoreFrontAccount/input_password')
+TestObject btn_login = findTestObject('Object Repository/StoreFrontAccount/btn_login')
+def email_list = new String[2]
+email_list[0] = "a.com"
+email_list[1] = "b.com"
+
+WebUI.openBrowser('https://auto2023.myshopify.com/account/login')
+
+WebUI.sendKeys(input_email, email_list[0] )
+
+WebUI.sendKeys(input_password, "huynh@1.com")
+
+WebUI.click(btn_login)
+
+WebUI.takeScreenshot("hinhttest.png")

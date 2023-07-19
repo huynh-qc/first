@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TR01_SPF Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8a864834-f698-42c7-a797-70deb7a59679</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>963a48ab-3d33-476f-97d7-b039e9f54fb5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2f85368e-7b50-440a-a2bf-f82a93d9f154</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>08c84331-a416-4e66-be50-21184eeb4c17</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('StoreFrontAccount/input_email')</defaultValue>
+      <description></description>
+      <id>963a48ab-3d33-476f-97d7-b039e9f54fb5</id>
+      <masked>false</masked>
+      <name>input_email</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('StoreFrontAccount/input_password')</defaultValue>
+      <description></description>
+      <id>2f85368e-7b50-440a-a2bf-f82a93d9f154</id>
+      <masked>false</masked>
+      <name>input_password</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('StoreFrontAccount/btn_login')</defaultValue>
+      <description></description>
+      <id>08c84331-a416-4e66-be50-21184eeb4c17</id>
+      <masked>false</masked>
+      <name>btn_login</name>
+   </variable>
+</TestCaseEntity>

@@ -16,13 +16,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+
 import com.kms.katalon.keyword.excel.ExcelKeywords
 
-//Method width Parameters
-addThreeNumbers(1,2,3)
-
-def addThreeNumbers(def firstValue, def secondValue, def thirdValue)
-    {
-        def total = firstValue + secondValue + thirdValue
-        println("The total value is : "+total)
-    }
+def workbook = ExcelKeywords.getWorkbook("Data Files\\email.xlsx")
+println workbook
