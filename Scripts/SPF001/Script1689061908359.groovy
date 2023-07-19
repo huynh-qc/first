@@ -17,23 +17,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+TestObject input_email = findTestObject('Object Repository/StoreFrontAccount/input_email')
+TestObject input_password = findTestObject('Object Repository/StoreFrontAccount/input_password')
+TestObject btn_login = findTestObject('Object Repository/StoreFrontAccount/btn_login')
+TestObject warning = findTestObject('Object Repository/StoreFrontAccount/li_warning')
+def email = 'huynh+2342@xyc.com'
+WebUI.openBrowser('https://auto2023.myshopify.com/account/login')
 
-WebUI.navigateToUrl('https://accounts.shopify.com/store-login')
+WebUI.sendKeys(input_email, email)
 
-WebUI.setText(findTestObject('Object Repository/Page_Log in  Shopify account/input_Email_accountemail'), email)
-WebUI.delay(5)
+WebUI.sendKeys(input_password, "huynh@1.com")
 
-WebUI.click(findTestObject('Object Repository/Page_Log in  Shopify account/button_Continue with Email'))
-WebUI.delay(5)
+WebUI.click(btn_login)
 
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Shopify/input_Password_accountpassword'), 'aFIq2JAxbLdIICk85ZHRFA==')
-WebUI.delay(5)
-
-
-WebUI.click(findTestObject('Object Repository/Page_Shopify/button_Log in'))
+WebUI.verifyElementText(warning, "Incorrect email or password.")
 
 WebUI.takeScreenshot("hinhttest.png")
-
-WebUI.closeBrowser()
 
